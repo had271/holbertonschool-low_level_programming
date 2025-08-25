@@ -3,6 +3,9 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+/** this function print random number
+ * and print whether the number stored in the variable n is positive or negative or zero
+*/
 int main(void)
 {
 	int n;
