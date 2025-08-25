@@ -3,8 +3,11 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
-/** this function print random number
- * and print whether the number stored in the variable n is positive or negative or zero
+/**
+ * main - Entry point
+ *this function print random number
+ * print whether the number in n is positive or negative or zero
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
