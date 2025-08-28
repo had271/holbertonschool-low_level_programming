@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * _isalpha - Checks for character letter
  * @c: The character to check
  *
