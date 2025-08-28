@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * jack_bauer - prints every minute of the day
@@ -8,12 +7,19 @@
  */
 void jack_bauer(void)
 {
-	int H;
-	int M;
+	int h, m;
 
-	for (H = 0; H <= 23; H++)
+	for (h = 0; h < 24; h++)
 	{
-		for (M = 0; M <= 59; M++)
+		for (m = 0; m < 60; m++)
 		{
-			printf("%02d:%02d\n", H, M);
-}}}
+			_putchar('0' + h / 10);
+			_putchar('0' + h % 10);
+			_putchar(':');
+			_putchar('0' + m / 10);
+			_putchar('0' + m % 10);
+			_putchar('\n');
+		}
+	}
+}
+
