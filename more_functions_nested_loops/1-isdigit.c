@@ -2,6 +2,7 @@
 
 /**
  * main - prints _isdigit
+ * @c: The number to check
  *
  * Return: 1 if c is a digit returns 0 otherwise
  */
