@@ -3,7 +3,7 @@
 /**
  * *_strcat - concats two arrays
  *@dest: destination of concat
- @src: source array to concat
+ *@src: source array to concat
  * Return: a pointer to the resulting string dest
  */
 char *_strcat(char *dest, char *src)
