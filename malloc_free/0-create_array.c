@@ -4,8 +4,8 @@
  * create_array - Create array of chars
 	 and initializes it with a specific char.
  * @size: the size of the array
- *@c: the specific char
- *Return: return NULL if the size of the array 0 or filed to return a pointer
+ * @c: the specific char
+ * Return: return NULL if the size of the array 0 or filed to return a pointer
  *	Otherwise return pointer
  */
 char *create_array(unsigned int size, char c)
