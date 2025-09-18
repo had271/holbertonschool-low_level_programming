@@ -1,5 +1,4 @@
-
- * File: 1#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
