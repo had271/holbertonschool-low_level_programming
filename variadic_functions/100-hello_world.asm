@@ -12,3 +12,4 @@ main:
 	    syscall
 	  section .data
 message:	 db "Hello, World"
+message_end:
