@@ -4,7 +4,7 @@ main:
 	    mov rax, 1
 	    mov rdi, 1
 	    mov rsi, message
-	    mov rdx, 13
+	    mov rdx, message_end - message  ; NASM computes size
 	    syscall
 
 	    mov rax, 60
@@ -12,4 +12,3 @@ main:
 	    syscall
 	  section .data
 message:	 db "Hello, World"
-message_end:
