@@ -11,15 +11,15 @@ unsigned long int cont = 0;
 
 for (cont = 0; cont < ht->size; cont++)
 {
-node = ht->array[cont];
-while (node != NULL)
-{
-temp = node;
-node = node->next;
-free(temp->key);
-free(temp->value);
-free(temp);
-}
+	node = ht->array[cont];
+	while (node != NULL)
+	{
+		temp = node;
+		node = node->next;
+		free(temp->key);
+		free(temp->value);
+		free(temp);
+	}
 }
 free(ht->array);
 free(ht);
