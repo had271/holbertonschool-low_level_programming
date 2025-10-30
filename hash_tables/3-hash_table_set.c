@@ -19,8 +19,11 @@ index = key_index((const unsigned char *)key, size);
 
 if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
 {
-ht->array[index]->value = strdup(value);
-return (1);
+	free(ht->array[index]->value);
+	ht->array[index]->value = strdup(value);
+	if (ht->array[index]->value == NULL)
+		return (0);
+	return (1);
 }
 
 new_node = malloc(sizeof(hash_node_t));
